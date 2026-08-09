@@ -60,7 +60,6 @@ export default function Volunteer() {
             Join Our Volunteer Family
           </h1>
           <p className="text-slate-200 text-lg max-w-2xl mx-auto drop-shadow">
-            No warrior fights alone. Your time, talent, and compassion can bring immense comfort, education, and hope to individuals and families living with Sickle Cell Disease.
           </p>
         </div>
       </div>
