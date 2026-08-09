@@ -15,7 +15,6 @@ export default function CHWSupport() {
             Community Health Worker (CHW) Support
           </h1>
           <p className="text-slate-200 text-lg max-w-2xl mx-auto drop-shadow">
-            Bridging the gap between clinical care and community living to ensure every warrior receives trusted, compassionate, and personalized guidance.
           </p>
         </div>
       </div>
