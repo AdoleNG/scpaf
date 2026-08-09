@@ -141,8 +141,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GLOBAL & REGIONAL STATISTICS SECTION (Lighter shade of red background) */}
-      <section className="bg-[#B93838] text-white rounded-2xl p-8 md:p-14 shadow-xl">
+      {/* GLOBAL & REGIONAL STATISTICS SECTION (Using inline style matching the exact red background of the "What is Sickle Cell Disease?" card overlay: #8A1C1C) */}
+      <section className="text-white rounded-2xl p-8 md:p-14 shadow-xl" style={{ backgroundColor: "#8A1C1C" }}>
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
             WHO Insights & Data
