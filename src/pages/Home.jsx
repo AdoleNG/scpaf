@@ -17,7 +17,7 @@ export default function Home() {
         <div className="absolute top-0 left-0 h-full flex items-center">
           <div className="bg-[#1E2248]/90 text-white p-10 rounded-xl shadow-xl max-w-md ml-10">
             <h2 className="text-3xl font-bold flex items-center gap-3">
-              <span className="text-red-400">❤️</span> Serving with Care and Compassion
+              Serving with Care and Compassion
             </h2>
 
             <p className="mt-4 text-lg leading-relaxed text-gray-200">
@@ -141,7 +141,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GLOBAL & REGIONAL STATISTICS SECTION (Using inline style matching the exact red background of the "What is Sickle Cell Disease?" card overlay: #8A1C1C) */}
+      {/* GLOBAL & REGIONAL STATISTICS SECTION */}
       <section className="text-white rounded-2xl p-8 md:p-14 shadow-xl" style={{ backgroundColor: "#8A1C1C" }}>
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
@@ -155,7 +155,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           
           {/* Card 1: Africa & Nigeria Burden */}
           <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
@@ -191,7 +191,24 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 3: Mortality & Critical Care Gap */}
+          {/* Card 3: Nigerian Trait Carriers (New Card) */}
+          <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
+            <div>
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs uppercase tracking-wider font-medium text-red-400">Trait Carriers</span>
+                <span className="text-2xl" role="img" aria-label="Nigeria Map Flag">🇳🇬</span>
+              </div>
+              <h3 className="text-3xl font-extrabold text-white mb-3">50 Million</h3>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                An estimated 50 million Nigerians carry the sickle cell trait (HbAS).
+              </p>
+            </div>
+            <div className="mt-6 pt-4 border-t border-slate-700/40 text-xs text-slate-400">
+              National Carrier Statistics
+            </div>
+          </div>
+
+          {/* Card 4: Mortality & Critical Care Gap */}
           <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
             <div>
               <div className="flex items-center justify-between mb-3">
