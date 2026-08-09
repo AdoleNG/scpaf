@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function WhatIsSCD() {
   useEffect(() => {
@@ -73,20 +74,24 @@ export default function WhatIsSCD() {
         </div>
 
         {/* PANEL 4 — Need Support? */}
-        <div className="bg-[#1E2248] text-white p-8 rounded-xl shadow-lg">
-          <h2 className="text-2xl font-bold mb-3">Need Support?</h2>
-          <p className="text-lg leading-relaxed text-gray-200">
-            SCPAF provides education, counselling, community health worker
-            support, and resources for families affected by Sickle Cell Disease.
-            Whether you are a warrior, caregiver, or parent, we are here to help.
-          </p>
+        <div className="bg-[#1E2248] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
+          <div>
+            <h2 className="text-2xl font-bold mb-3">Need Support?</h2>
+            <p className="text-lg leading-relaxed text-gray-200">
+              SCPAF provides education, counselling, community health worker
+              support, and resources for families affected by Sickle Cell Disease.
+              Whether you are a warrior, caregiver, or parent, we are here to help.
+            </p>
+          </div>
 
-          <a
-            href="/contact"
-            className="inline-block mt-6 bg-white text-[#1E2248] font-semibold px-6 py-3 rounded-lg shadow hover:bg-slate-100 transition"
-          >
-            Contact Us
-          </a>
+          <div>
+            <Link
+              to="/contact"
+              className="inline-block mt-6 bg-white text-[#1E2248] font-semibold px-6 py-3 rounded-lg shadow hover:bg-slate-100 transition"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
 
       </section>
