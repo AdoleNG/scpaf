@@ -4,8 +4,28 @@ import { Link } from "react-router-dom";
 export default function Donate() {
   const [frequency, setFrequency] = useState("monthly"); // 'monthly' or 'onetime'
   const [selectedAmount, setSelectedAmount] = useState("50");
+  const [isCustom, setIsCustom] = useState(false);
+  const [customAmount, setCustomAmount] = useState("");
 
   const presetAmounts = ["25", "50", "100", "250", "500"];
+
+  const handlePresetClick = (amount) => {
+    setIsCustom(false);
+    setSelectedAmount(amount);
+  };
+
+  const handleCustomClick = () => {
+    setIsCustom(true);
+    setSelectedAmount(customAmount || "");
+  };
+
+  const handleCustomChange = (e) => {
+    const val = e.target.value;
+    setCustomAmount(val);
+    setSelectedAmount(val);
+  };
+
+  const finalAmount = isCustom ? customAmount : selectedAmount;
 
   return (
     <div className="w-full text-[#0D1B2A] pb-16">
@@ -80,14 +100,14 @@ export default function Donate() {
             <label className="block text-sm font-medium text-slate-700 mb-3 text-center">
               Select {frequency === "monthly" ? "Monthly" : "One-Time"} Donation Amount ($)
             </label>
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-3 max-w-2xl mx-auto">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-3 max-w-3xl mx-auto">
               {presetAmounts.map((amount) => (
                 <button
                   key={amount}
                   type="button"
-                  onClick={() => setSelectedAmount(amount)}
+                  onClick={() => handlePresetClick(amount)}
                   className={`py-3 rounded-lg font-bold border transition text-lg ${
-                    selectedAmount === amount
+                    !isCustom && selectedAmount === amount
                       ? "border-red-600 bg-red-50 text-red-600"
                       : "border-slate-300 bg-white text-slate-700 hover:border-slate-400"
                   }`}
@@ -95,23 +115,54 @@ export default function Donate() {
                   ${amount}
                 </button>
               ))}
+              
+              {/* Custom Amount Button */}
+              <button
+                type="button"
+                onClick={handleCustomClick}
+                className={`py-3 rounded-lg font-bold border transition text-sm md:text-base ${
+                  isCustom
+                    ? "border-red-600 bg-red-50 text-red-600"
+                    : "border-slate-300 bg-white text-slate-700 hover:border-slate-400"
+                }`}
+              >
+                Custom
+              </button>
             </div>
+
+            {/* Custom Amount Input Field (Shows when Custom is selected) */}
+            {isCustom && (
+              <div className="mt-4 max-w-xs mx-auto">
+                <div className="relative rounded-md shadow-sm">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500 font-bold">
+                    $
+                  </div>
+                  <input
+                    type="number"
+                    min="1"
+                    placeholder="Enter amount"
+                    value={customAmount}
+                    onChange={handleCustomChange}
+                    className="block w-full pl-8 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-red-500 focus:border-red-500 text-lg font-semibold"
+                  />
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="max-w-2xl mx-auto text-center">
             <button 
               type="button" 
-              onClick={() => alert(`Thank you for choosing a ${frequency} gift of $${selectedAmount}! Payment gateway integration goes here.`)}
+              onClick={() => alert(`Thank you for choosing a ${frequency} gift of $${finalAmount || 0}! Payment gateway integration goes here.`)}
               className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-lg shadow transition text-lg"
             >
-              Donate ${selectedAmount} {frequency === "monthly" ? "Monthly" : ""} Now
+              Donate ${finalAmount || "0"} {frequency === "monthly" ? "Monthly" : ""} Now
             </button>
           </div>
         </div>
 
-        {/* 3 Donation Path Cards (matching your example design intent) */}
+        {/* 3 Donation Path Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          
           <div className="bg-slate-100 rounded-lg border border-slate-200 p-8 text-center flex flex-col justify-between shadow-sm">
             <div>
               <h4 className="font-bold text-xl text-[#0D1B2A] mb-4">Make a general donation</h4>
@@ -126,7 +177,7 @@ export default function Donate() {
             </div>
           </div>
 
-                    <div className="bg-slate-100 rounded-lg border border-slate-200 p-8 text-center flex flex-col justify-between shadow-sm">
+          <div className="bg-slate-100 rounded-lg border border-slate-200 p-8 text-center flex flex-col justify-between shadow-sm">
             <div>
               <h4 className="font-bold text-xl text-[#0D1B2A] mb-4">Sponsor an event</h4>
               <p className="text-slate-600 text-sm mb-6">
@@ -139,7 +190,6 @@ export default function Donate() {
               </Link>
             </div>
           </div>
-
         </div>
 
         {/* Bottom Contact Footer Banner */}
