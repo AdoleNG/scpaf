@@ -69,7 +69,7 @@ export default function Contact() {
               </p>
             </div>
             <Link 
-              to="/donate" 
+              to="/sponsors/donate" 
               className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-md shadow transition"
             >
               Donate & Support &rarr;
