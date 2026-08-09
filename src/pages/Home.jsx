@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  const [email, setEmail] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleNewsletterSubmit = (e) => {
+    e.preventDefault();
+    // Newsletter submission logic can be placed here
+    console.log("Subscribed:", { email, subscribed });
+  };
+
   return (
     <main className="max-w-7xl mx-auto px-6 py-16">
 
@@ -110,7 +119,7 @@ export default function Home() {
 
       </section>
 
-      {/* GLOBAL PREVALENCE BANNER CARD (Reference Style Layout) */}
+      {/* GLOBAL PREVALENCE BANNER CARD */}
       <section className="mb-20">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 grid grid-cols-1 lg:grid-cols-12 items-stretch">
           
@@ -141,8 +150,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GLOBAL & REGIONAL STATISTICS SECTION (Using exact same background colour and opacity: #8A1C1C with /80 opacity) */}
-      <section className="text-white rounded-2xl p-8 md:p-14 shadow-xl bg-[#8A1C1C]/80">
+      {/* GLOBAL & REGIONAL STATISTICS SECTION */}
+      <section className="text-white rounded-2xl p-8 md:p-14 shadow-xl bg-[#8A1C1C]/80 mb-20">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
             WHO Insights & Data
@@ -227,6 +236,174 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* ========================================== */}
+      {/* NEWSLETTER & FOOTER REPLICATION SECTION    */}
+      {/* ========================================== */}
+      <footer className="rounded-2xl overflow-hidden shadow-2xl">
+        
+        {/* JOIN THE MOVEMENT / NEWSLETTER BLOCK */}
+        <div
+          className="relative px-6 py-16 md:px-12 text-white flex flex-col items-start justify-center"
+          style={{
+            backgroundImage: "url('/images/newsletter-bg.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {/* Deep Navy tint overlay for harmonized palette */}
+          <div className="absolute inset-0 bg-[#1E2248]/85"></div>
+
+          <div className="relative z-10 w-full max-w-2xl">
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight uppercase mb-2">
+              Join the Movement
+            </h2>
+            <p className="text-gray-200 text-sm md:text-base mb-6">
+              Get the latest news and updates
+            </p>
+
+            <form onSubmit={handleNewsletterSubmit} className="space-y-4">
+              <div>
+                <label htmlFor="newsletter-email" className="block text-sm font-medium mb-1">
+                  Email <span className="text-red-400">*</span>
+                </label>
+                <input
+                  id="newsletter-email"
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-3 bg-white text-slate-900 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 shadow-inner"
+                />
+              </div>
+
+              <div className="flex items-center space-x-2 pt-1">
+                <input
+                  id="subscribe-checkbox"
+                  type="checkbox"
+                  checked={subscribed}
+                  onChange={(e) => setSubscribed(e.target.checked)}
+                  className="w-4 h-4 rounded text-[#8A1C1C] focus:ring-red-500 bg-white border-none"
+                />
+                <label htmlFor="subscribe-checkbox" className="text-sm text-gray-200">
+                  Yes, subscribe me to your newsletter.
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full py-3 px-6 bg-[#8A1C1C] hover:bg-red-700 text-white font-semibold rounded-md transition duration-200 shadow-md uppercase tracking-wider text-sm mt-2"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* 3-COLUMN FOOTER PANEL */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 text-white">
+          
+          {/* Column 1: Contact & Organization Details */}
+          <div className="lg:col-span-5 bg-[#2A2E3D] p-8 md:p-10 flex flex-col justify-between text-xs md:text-sm leading-relaxed">
+            <div>
+              <h3 className="font-bold text-base md:text-lg mb-3">
+                Sickle Cell Patient Support & Advocacy Foundation (SCPAF)
+              </h3>
+              <p className="text-gray-300 mb-2">
+                Providing support, advocacy, and educational resources to empower warriors and families affected by sickle cell disease.
+              </p>
+              <div className="space-y-1 text-gray-300">
+                <p><strong>Email:</strong> info@scpaf.org</p>
+              </div>
+            </div>
+
+            <div className="mt-8 pt-4 border-t border-slate-600 text-[11px] text-gray-400 leading-normal">
+              <p>
+                This platform is dedicated to raising awareness, supporting individuals living with sickle cell disease, and fostering community care.
+              </p>
+              <Link to="/privacy-policy" className="underline hover:text-white mt-2 inline-block">
+                Privacy Policy & Terms
+              </Link>
+            </div>
+          </div>
+
+          {/* Column 2: Helpful Links */}
+          <div className="lg:col-span-4 bg-[#1E2248] p-8 md:p-10">
+            <h3 className="text-lg font-bold mb-4 text-white">Helpful Links</h3>
+            <ul className="space-y-3 text-sm text-gray-200">
+              <li>
+                <Link to="about/what-is-scd" className="hover:underline flex items-center gap-2">
+                  <span className="text-xs">•</span> What is Sickle Cell Disease?
+                </Link>
+              </li>
+              <li>
+                <Link to="warriors/programs" className="hover:underline flex items-center gap-2">
+                  <span className="text-xs">•</span> Programs & Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/resources" className="hover:underline flex items-center gap-2">
+                  <span className="text-xs">•</span> Resources & Toolkits
+                </Link>
+              </li>
+              <li>
+                <Link to="sponsors/donate" className="hover:underline flex items-center gap-2">
+                  <span className="text-xs">•</span> Donate
+                </Link>
+              </li>
+              <li>
+                <Link to="/about/about-us" className="hover:underline flex items-center gap-2">
+                  <span className="text-xs">•</span> About SCPAF
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3: Connect With Us */}
+          <div className="lg:col-span-3 bg-[#8A1C1C] p-8 md:p-10 flex flex-col justify-start">
+            <h3 className="text-lg font-bold mb-4 text-white">Connect with us</h3>
+            <div className="flex items-center gap-4 text-2xl text-white">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                className="hover:opacity-80 transition"
+              >
+                📷
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+                className="hover:opacity-80 transition"
+              >
+                📘
+              </a>
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="X (Twitter)"
+                className="hover:opacity-80 transition"
+              >
+                𝕏
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="YouTube"
+                className="hover:opacity-80 transition"
+              >
+                🎥
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
 
     </main>
   );
