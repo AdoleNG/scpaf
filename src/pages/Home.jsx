@@ -35,37 +35,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GLOBAL PREVALENCE BANNER CARD (Reference Style Layout) */}
-      <section className="mb-20">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 grid grid-cols-1 lg:grid-cols-12 items-stretch">
-          
-          {/* Left Stats Side matching reference style */}
-          <div className="lg:col-span-5 bg-[#1E2248] text-white p-8 md:p-12 flex flex-col justify-center">
-            <div className="flex items-center space-x-3 mb-4">
-              <span className="p-3 bg-white/10 rounded-xl text-2xl">🧬</span>
-              <span className="text-sm uppercase tracking-wider font-semibold text-red-400">Global Prevalence</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-3 tracking-tight">
-              300,000,000
-            </h2>
-            <p className="text-gray-200 text-base leading-relaxed">
-              Approximately 300 million people have sickle cell trait worldwide.
-            </p>
-          </div>
-
-          {/* Right Image Side (Matching style of hero images) */}
-          <div className="lg:col-span-7 relative h-72 lg:h-auto min-h-[300px]">
-            <img
-              src="/images/home-hero.png"
-              alt="Community health support"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1E2248]/30 to-transparent lg:hidden"></div>
-          </div>
-
-        </div>
-      </section>
-
       {/* TWO-PANEL SECTION WITH ICONS */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
 
@@ -139,6 +108,37 @@ export default function Home() {
           </div>
         </div>
 
+      </section>
+
+      {/* GLOBAL PREVALENCE BANNER CARD (Reference Style Layout) */}
+      <section className="mb-20">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 grid grid-cols-1 lg:grid-cols-12 items-stretch">
+          
+          {/* Left Stats Side matching reference style */}
+          <div className="lg:col-span-5 bg-[#1E2248] text-white p-8 md:p-12 flex flex-col justify-center">
+            <div className="flex items-center space-x-3 mb-4">
+              <span className="p-3 bg-white/10 rounded-xl text-2xl">🧬</span>
+              <span className="text-sm uppercase tracking-wider font-semibold text-red-400">Global Prevalence</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-3 tracking-tight">
+              300,000,000
+            </h2>
+            <p className="text-gray-200 text-base leading-relaxed">
+              Approximately 300 million people have sickle cell trait worldwide.
+            </p>
+          </div>
+
+          {/* Right Image Side (Matching style of hero images) */}
+          <div className="lg:col-span-7 relative h-72 lg:h-auto min-h-[300px]">
+            <img
+              src="/images/home-hero.png"
+              alt="Community health support"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1E2248]/30 to-transparent lg:hidden"></div>
+          </div>
+
+        </div>
       </section>
 
       {/* GLOBAL & REGIONAL STATISTICS SECTION WITH ICONS */}
