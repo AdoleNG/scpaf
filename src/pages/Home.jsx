@@ -35,7 +35,7 @@ export default function Home() {
             </p>
 
             <Link
-              to="/donate"
+              to="/pages/Sponsors/Donate"
               className="inline-block mt-6 bg-[#C62828] text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-red-600 transition"
             >
               Support SCPAF
@@ -307,7 +307,7 @@ export default function Home() {
           <div className="lg:col-span-5 bg-[#2A2E3D] p-8 md:p-10 flex flex-col justify-between text-xs md:text-sm leading-relaxed">
             <div>
               <h3 className="font-bold text-base md:text-lg mb-3">
-                Sickle Cell Patient Support & Advocacy Foundation (SCPAF)
+                Sickle Cell Prevention & Aids Foundation (SCPAF)
               </h3>
               <p className="text-gray-300 mb-2">
                 Providing support, advocacy, and educational resources to empower warriors and families affected by sickle cell disease.
