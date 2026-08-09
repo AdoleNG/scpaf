@@ -35,7 +35,7 @@ export default function Home() {
             </p>
 
             <Link
-              to="/pages/Sponsors/Donate"
+              to="/Sponsors/Donate"
               className="inline-block mt-6 bg-[#C62828] text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-red-600 transition"
             >
               Support SCPAF
