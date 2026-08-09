@@ -36,7 +36,7 @@ export default function Home() {
       </section>
 
       {/* TWO-PANEL SECTION */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
 
         {/* LEFT PANEL — ABOUT SCPAF WITH BACKGROUND IMAGE */}
         <div
@@ -99,6 +99,82 @@ export default function Home() {
         </div>
 
       </section>
+
+      {/* GLOBAL & REGIONAL STATISTICS SECTION */}
+      <section className="bg-[#121B35] text-white rounded-2xl p-8 md:p-14 shadow-xl">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <span className="bg-red-600/20 text-red-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+            WHO Insights & Data
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-3">
+            Sickle Cell Disease by the Numbers
+          </h2>
+          <p className="text-slate-300 mt-2">
+            Understanding the global burden and the critical necessity for proactive intervention, screening, and care.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          {/* Card 1: Worldwide Prevalence */}
+          <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
+            <div>
+              <span className="text-xs uppercase tracking-wider font-medium text-red-400">Global Prevalence</span>
+              <h3 className="text-3xl font-extrabold text-white mt-2 mb-3">7.74M+</h3>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                People worldwide are living with sickle cell disease.
+              </p>
+            </div>
+            <div className="mt-6 pt-4 border-t border-slate-700/40 text-xs text-slate-400">
+              World Health Organization Estimates
+            </div>
+          </div>
+
+          {/* Card 2: Africa & Nigeria Burden */}
+          <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
+            <div>
+              <span className="text-xs uppercase tracking-wider font-medium text-red-400">African Region</span>
+              <h3 className="text-3xl font-extrabold text-white mt-2 mb-3">6 Million</h3>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                People in Africa (and specifically in Nigeria) live with SCD, forming the heaviest burden globally.
+              </p>
+            </div>
+            <div className="mt-6 pt-4 border-t border-slate-700/40 text-xs text-slate-400">
+              Regional Health Indicators
+            </div>
+          </div>
+
+          {/* Card 3: Nigerian Births */}
+          <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
+            <div>
+              <span className="text-xs uppercase tracking-wider font-medium text-red-400">Nigeria Newborns</span>
+              <h3 className="text-3xl font-extrabold text-white mt-2 mb-3">150,000</h3>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                Children are born with sickle cell disease in Nigeria each year.
+              </p>
+            </div>
+            <div className="mt-6 pt-4 border-t border-slate-700/40 text-xs text-slate-400">
+              National Birth Statistics
+            </div>
+          </div>
+
+          {/* Card 4: Mortality & Critical Care Gap */}
+          <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
+            <div>
+              <span className="text-xs uppercase tracking-wider font-medium text-red-400">Mortality Impact</span>
+              <h3 className="text-3xl font-extrabold text-white mt-2 mb-3">50% - 80%</h3>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                Estimated child mortality before age 5 in Nigeria and Sub-Saharan Africa without early screening and standard preventive care. Globally, ~81,100 children under 5 die from SCD yearly.
+              </p>
+            </div>
+            <div className="mt-6 pt-4 border-t border-slate-700/40 text-xs text-slate-400">
+              WHO & Global Burden Study
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
   );
 }
