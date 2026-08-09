@@ -347,7 +347,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link to="/pages/sponsors/donate" className="hover:underline flex items-center gap-2">
+                <Link to="/sponsors/donate" className="hover:underline flex items-center gap-2">
                   <span className="text-xs">•</span> Donate
                 </Link>
               </li>
