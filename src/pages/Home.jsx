@@ -141,8 +141,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GLOBAL & REGIONAL STATISTICS SECTION */}
-      <section className="text-white rounded-2xl p-8 md:p-14 shadow-xl" style={{ backgroundColor: "#8A1C1C" }}>
+      {/* GLOBAL & REGIONAL STATISTICS SECTION (Using exact same background colour and opacity: #8A1C1C with /80 opacity) */}
+      <section className="text-white rounded-2xl p-8 md:p-14 shadow-xl bg-[#8A1C1C]/80">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
             WHO Insights & Data
@@ -191,7 +191,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 3: Nigerian Trait Carriers (New Card) */}
+          {/* Card 3: Nigerian Trait Carriers */}
           <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
             <div>
               <div className="flex items-center justify-between mb-3">
