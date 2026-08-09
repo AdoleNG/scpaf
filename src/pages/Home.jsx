@@ -128,11 +128,11 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Right Image Side (Matching style of hero images) */}
+          {/* Right Image Side */}
           <div className="lg:col-span-7 relative h-72 lg:h-auto min-h-[300px]">
             <img
-              src="/images/home-hero.png"
-              alt="Community health support"
+              src="/images/globalstatsimage.png"
+              alt="Community global statistics support"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#1E2248]/30 to-transparent lg:hidden"></div>
@@ -155,26 +155,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
-          {/* Card 1: Worldwide Prevalence */}
-          <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
-            <div>
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-xs uppercase tracking-wider font-medium text-red-400">Global Prevalence</span>
-                <span className="text-xl">🌍</span>
-              </div>
-              <h3 className="text-3xl font-extrabold text-white mb-3">7.74M+</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
-                People worldwide are living with sickle cell disease.
-              </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-slate-700/40 text-xs text-slate-400">
-              World Health Organization Estimates
-            </div>
-          </div>
-
-          {/* Card 2: Africa & Nigeria Burden */}
+          {/* Card 1: Africa & Nigeria Burden */}
           <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
             <div>
               <div className="flex items-center justify-between mb-3">
@@ -191,7 +174,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 3: Nigerian Births */}
+          {/* Card 2: Nigerian Births */}
           <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
             <div>
               <div className="flex items-center justify-between mb-3">
@@ -208,7 +191,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 4: Mortality & Critical Care Gap */}
+          {/* Card 3: Mortality & Critical Care Gap */}
           <div className="bg-[#1E294B] border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between shadow-md">
             <div>
               <div className="flex items-center justify-between mb-3">
@@ -221,7 +204,7 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-700/40 text-xs text-slate-400">
-              WHO & Global Burden Study
+              WHO & Global Burden Study2
             </div>
           </div>
 
