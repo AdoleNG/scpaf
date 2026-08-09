@@ -141,16 +141,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GLOBAL & REGIONAL STATISTICS SECTION WITH ICONS */}
-      <section className="bg-[#121B35] text-white rounded-2xl p-8 md:p-14 shadow-xl">
+      {/* GLOBAL & REGIONAL STATISTICS SECTION (Background color matched to "What is Sickle Cell Disease?" card: #8A1C1C) */}
+      <section className="bg-[#8A1C1C] text-white rounded-2xl p-8 md:p-14 shadow-xl">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="bg-red-600/20 text-red-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+          <span className="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
             WHO Insights & Data
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-3">
+          <h2 className="text-3xl md:text-4xl font-bold mt-3 text-white">
             Sickle Cell Disease by the Numbers
           </h2>
-          <p className="text-slate-300 mt-2">
+          <p className="text-red-100 mt-2">
             Understanding the global burden and the critical necessity for proactive intervention, screening, and care.
           </p>
         </div>
@@ -162,7 +162,7 @@ export default function Home() {
             <div>
               <div className="flex items-center justify-between mb-3">
                 <span className="text-xs uppercase tracking-wider font-medium text-red-400">African Region</span>
-                <span className="text-xl">📍</span>
+                <span className="text-2xl" role="img" aria-label="African Map">🗺️</span>
               </div>
               <h3 className="text-3xl font-extrabold text-white mb-3">6 Million</h3>
               <p className="text-slate-300 text-sm leading-relaxed">
@@ -179,7 +179,7 @@ export default function Home() {
             <div>
               <div className="flex items-center justify-between mb-3">
                 <span className="text-xs uppercase tracking-wider font-medium text-red-400">Nigeria Newborns</span>
-                <span className="text-xl">👶</span>
+                <span className="text-2xl" role="img" aria-label="Nigeria Map">🇳🇬</span>
               </div>
               <h3 className="text-3xl font-extrabold text-white mb-3">150,000</h3>
               <p className="text-slate-300 text-sm leading-relaxed">
@@ -204,7 +204,7 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-700/40 text-xs text-slate-400">
-              WHO & Global Burden Study
+              WHO & Global Burden Study2
             </div>
           </div>
 
