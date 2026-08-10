@@ -205,7 +205,7 @@ export default function Donate() {
               Call us at <a href="tel:9027897763" className="hover:underline">(902) 789-7763</a>
             </p>
             <p className="text-sm text-slate-600 mt-2">
-              Email inquiries: <a href="mailto:Victor.Ameh@primerica.com" className="text-red-600 font-semibold hover:underline">Victor.Ameh@primerica.com</a>
+              Email inquiries: <a href="mailto:info@scpaf.org" className="text-red-600 font-semibold hover:underline">info@scpaf.com</a>
             </p>
           </div>
         </div>
