@@ -7,28 +7,28 @@ export default function OurBoard() {
       title: "Chief Executive Officer / Chairman",
       description:
         "Over 15 years of youth-focused work and a staunch advocate for sick kids.",
-      photo: "/public/images/board1.png",
+      photo: "/images/board1.png"
     },
     {
       name: "Mercy Ameh",
       title: "Board Secretary",
       description:
         "Versatile Human Resource professional and trainer.",
-      photo: "/public/images/board2.png",
+      photo: "/images/board2.png",
     },
     {
       name: "Dr. Adejobi Adeloye",
       title: "Board Member",
       description:
         "Prominent leader in AI, telemedicine, emergency response, and humanitarian work. Founder of NovaDOC and trainer of over 12,000 frontline responders.",
-      photo: "/public/images/board3.png",
+      photo: "/images/board3.png",
     },
     {
       name: "Philip Ejeikwu",
       title: "Board Member",
       description:
         "Monitoring & Evaluation expert with versatile experience in non-profit work.",
-      photo: "/public/images/board4.png",
+      photo: "/images/board4.png",
     },
   ];
 
