@@ -101,7 +101,7 @@ export default function Volunteer() {
                 href="#contact-form" 
                 className="text-sm font-semibold text-red-600 hover:underline"
               >
-                Sign up for Outreach &rarr;
+                Sign up for Outreach
               </a>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Volunteer() {
                 href="#contact-form" 
                 className="text-sm font-semibold text-red-600 hover:underline"
               >
-                Sign up as a Care Companion &rarr;
+                Sign up as a Care Companion
               </a>
             </div>
           </div>

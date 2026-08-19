@@ -54,7 +54,7 @@ export default function BecomeSponsor() {
                 </p>
               </div>
               <a href="mailto:sponsorships@scpaf.com" className="text-sm font-semibold text-red-300 hover:underline">
-                Contact to sponsor &rarr;
+                Contact to sponsor
               </a>
             </div>
 
@@ -70,7 +70,7 @@ export default function BecomeSponsor() {
                 </p>
               </div>
               <a href="mailto:Sponsorships@scpa" className="text-sm font-semibold text-red-300 hover:underline">
-                Contact to sponsor &rarr;
+                Contact to sponsor
               </a>
             </div>
 
@@ -86,7 +86,7 @@ export default function BecomeSponsor() {
                 </p>
               </div>
               <a href="mailto:Victor.Ameh@primerica.com" className="text-sm font-semibold text-red-300 hover:underline">
-                Contact to sponsor &rarr;
+                Contact to sponsor
               </a>
             </div>
 
