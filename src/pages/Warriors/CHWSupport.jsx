@@ -100,7 +100,7 @@ export default function CHWSupport() {
             Our community health team is here to assist you or your family. Reach out to connect with a dedicated CHW.
           </p>
           <div className="text-lg font-semibold text-slate-800">
-            Contact us at <span className="text-red-600">(902) 789-7763</span> or email <span className="text-red-600">info@scpaf.com</span>
+            Contact us at <span className="text-red-600">+1 (902) 789-7763</span> or email <span className="text-red-600">contact@stopsicklecelldisease.org</span>
           </div>
         </div>
 

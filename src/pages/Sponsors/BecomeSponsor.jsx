@@ -30,7 +30,7 @@ export default function BecomeSponsor() {
               It takes someone with a very big heart to reach into their pocket and give to people they've never met. We thank you for everything you have done in the past, all that you are still doing, and all that you will continue to do.
             </p>
             <p className="text-slate-700 leading-relaxed text-base md:text-lg">
-              If you would like to become an event sponsor, please contact Victor Ameh at <a href="mailto:sponsorships@scpaf.con" className="text-red-600 font-semibold hover:underline">sponsorships@scpaf.com</a> or <a href="tel:9027897763" className="text-red-600 font-semibold hover:underline">(902) 789-7763</a> for more information.
+              If you would like to become an event sponsor, please contact us at <a href="mailto:contact@stopsicklecelldisease.org" className="text-red-600 font-semibold hover:underline">contact@stopsicklecelldisease.org</a> or <a href="tel:+1 (902)7897763" className="text-red-600 font-semibold hover:underline">(902) 789-7763</a> for more information.
             </p>
           </div>
         </div>

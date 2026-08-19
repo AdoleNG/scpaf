@@ -313,7 +313,7 @@ export default function Home() {
                 Providing support, advocacy, and educational resources to empower warriors and families affected by sickle cell disease.
               </p>
               <div className="space-y-1 text-gray-300">
-                <p><strong>Email:</strong> info@scpaf.org</p>
+                <p><strong>Email:</strong> contact@stopsicklecelldisease.org</p>
               </div>
             </div>
 

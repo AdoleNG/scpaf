@@ -157,7 +157,7 @@ export default function Volunteer() {
                 href="#contact-form" 
                 className="text-sm font-semibold text-red-600 hover:underline"
               >
-                Sign up for Digital & Media &rarr;
+                Sign up for Digital & Media
               </a>
             </div>
           </div>
