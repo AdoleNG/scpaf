@@ -202,10 +202,10 @@ export default function Donate() {
           <div className="w-full md:w-2/3 p-8 text-center md:text-left">
             <p className="text-slate-700 mb-2">Have questions or prefer to give offline?</p>
             <p className="text-xl md:text-2xl font-bold text-[#20818B]">
-              Call us at <a href="tel:9027897763" className="hover:underline">(902) 789-7763</a>
+              Call us at <a href="tel:+1 (902)7897763" className="hover:underline">+ 1 (902) 789-7763</a>
             </p>
             <p className="text-sm text-slate-600 mt-2">
-              Email inquiries: <a href="mailto:info@scpaf.org" className="text-red-600 font-semibold hover:underline">info@scpaf.com</a>
+              Email inquiries: <a href="mailto:contact@stopsicklecelldisease.org" className="text-red-600 font-semibold hover:underline">contact@stopsicklecelldisease.org</a>
             </p>
           </div>
         </div>
