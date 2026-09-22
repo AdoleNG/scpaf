@@ -47,7 +47,7 @@ export default function Navbar() {
           </Link>
 
           {/* Standalone Partners Tab */}
-          <Link to="/sponsors/partners" className="font-medium hover:text-red-600 transition">
+          <Link to="/partners" className="font-medium hover:text-red-600 transition">
             Partners
           </Link>
 
@@ -89,7 +89,7 @@ export default function Navbar() {
           <Link to="/warriors/clinics" onClick={() => setMobileOpen(false)} className="block py-1">Clinics</Link>
           <Link to="/warriors/register" onClick={() => setMobileOpen(false)} className="block py-1 font-semibold text-red-600">Warrior Registration</Link>
           <Link to="/warriors/volunteer" onClick={() => setMobileOpen(false)} className="block py-1">Volunteer</Link>
-          <Link to="/sponsors/partners" onClick={() => setMobileOpen(false)} className="block py-1">Partners</Link>
+          <Link to="/partners" onClick={() => setMobileOpen(false)} className="block py-1">Partners</Link>
           <Link to="/sponsors/become-a-sponsor" onClick={() => setMobileOpen(false)} className="block py-1">Become A Sponsor</Link>
           <Link to="/sponsors/donate" onClick={() => setMobileOpen(false)} className="block py-2 font-bold text-red-600">Donate</Link>
         </div>
