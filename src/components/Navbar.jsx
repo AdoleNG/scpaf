@@ -42,9 +42,7 @@ export default function Navbar() {
           </div>
 
           {/* Standalone Volunteer Tab */}
-          <Link to="/warriors/volunteer" className="font-medium hover:text-red-600 transition">
-            Volunteer
-          </Link>
+          <Link to="/warriors/volunteer" className="font-medium hover:text-red-600 transition">Volunteer</Link>
 
           {/* Standalone Partners Tab */}
           <Link to="/partners" className="font-medium hover:text-red-600 transition">
