@@ -17,6 +17,7 @@ import Resources from "./pages/Warriors/Resources";
 import Clinics from "./pages/Warriors/Clinics";
 import Volunteer from "./pages/Warriors/Volunteer";
 import WarriorsCaregivers from "./pages/Warriors/WarriorsCaregivers";
+import Partners from "./pages/Partners";
 
 /* Sponsors & Supporters */
 import BecomeSponsor from "./pages/Sponsors/BecomeSponsor";
