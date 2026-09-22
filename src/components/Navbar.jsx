@@ -46,12 +46,16 @@ export default function Navbar() {
             Volunteer
           </Link>
 
-          {/* Sponsors & Supporters Dropdown (Updated with Partners) */}
+          {/* Standalone Partners Tab */}
+          <Link to="/sponsors/partners" className="font-medium hover:text-red-600 transition">
+            Partners
+          </Link>
+
+          {/* Sponsors & Supporters Dropdown */}
           <div className="relative group py-2">
             <button className="font-medium flex items-center gap-1">Sponsors & Supporters</button>
             <div className="absolute left-0 mt-0 w-64 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <Link to="/sponsors/become-a-sponsor" className="block px-4 py-2.5 hover:bg-slate-100 text-[#0D1B2A]">Become A Sponsor</Link>
-              <Link to="/sponsors/partners" className="block px-4 py-2.5 hover:bg-slate-100 text-[#0D1B2A]">Our Partners</Link>
               <Link to="/sponsors/donate" className="block px-4 py-2.5 hover:bg-slate-100 text-[#0D1B2A]">Donate</Link>
             </div>
           </div>
@@ -75,7 +79,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Drawer (Updated with Partners) */}
+      {/* Mobile Drawer */}
       {mobileOpen && (
         <div className="md:hidden bg-[#E6E9EF] shadow-lg p-4 space-y-3 text-[#0D1B2A] border-t border-slate-300">
           <Link to="/about/about-us" onClick={() => setMobileOpen(false)} className="block py-1">About Us</Link>
@@ -85,8 +89,8 @@ export default function Navbar() {
           <Link to="/warriors/clinics" onClick={() => setMobileOpen(false)} className="block py-1">Clinics</Link>
           <Link to="/warriors/register" onClick={() => setMobileOpen(false)} className="block py-1 font-semibold text-red-600">Warrior Registration</Link>
           <Link to="/warriors/volunteer" onClick={() => setMobileOpen(false)} className="block py-1">Volunteer</Link>
+          <Link to="/sponsors/partners" onClick={() => setMobileOpen(false)} className="block py-1">Partners</Link>
           <Link to="/sponsors/become-a-sponsor" onClick={() => setMobileOpen(false)} className="block py-1">Become A Sponsor</Link>
-          <Link to="/sponsors/partners" onClick={() => setMobileOpen(false)} className="block py-1">Our Partners</Link>
           <Link to="/sponsors/donate" onClick={() => setMobileOpen(false)} className="block py-2 font-bold text-red-600">Donate</Link>
         </div>
       )}
