@@ -52,6 +52,8 @@ export default function App() {
           {/* Sponsors & Supporters */}
           <Route path="/sponsors/become-a-sponsor" element={<BecomeSponsor />} />
           <Route path="/sponsors/donate" element={<Donate />} />
+          
+          {/* Partners */}
           <Route path="/partners" element={<Partners />} />
 
           {/* Utility */}
