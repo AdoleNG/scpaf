@@ -25,7 +25,7 @@ import BecomeSponsor from "../pages/Sponsors/BecomeSponsor";
 import Donate from "../pages/Sponsors/Donate";
 
 /* Partners */
-import Partners from "../pages/Sponsors/Partners";
+import Partners from "../pages/Partners";
 
 
 /* Utility */
