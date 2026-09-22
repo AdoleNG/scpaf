@@ -75,12 +75,12 @@ export default function Partners() {
 
   return (
     <div className="w-full text-[#0D1B2A] pb-16">
-      {/* Hero Banner */}
+      {/* Hero Banner with Modern Hospital Environment Image */}
       <div 
         className="relative w-full h-80 md:h-96 bg-cover bg-center flex items-center"
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1600&q=80')` }}
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80')` }}
       >
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 lg:px-8 w-full z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-md">
@@ -99,7 +99,7 @@ export default function Partners() {
           </div>
           <div>
             <p className="text-slate-700 leading-relaxed text-base md:text-lg mb-6">
-              Our network across Abuja and Keffi includes top-tier teaching hospitals, specialized clinics, diagnostic laboratories, and pharmacies dedicated to supporting sickle cell warriors.
+              Our network includes hospitals, specialized clinics, diagnostic laboratories, and pharmacies dedicated to supporting sickle cell warriors.
             </p>
             <p className="text-slate-700 leading-relaxed text-base md:text-lg">
               If your institution would like to join our referral and support network, contact us at <a href="mailto:contact@stopsicklecelldisease.org" className="text-red-600 font-semibold hover:underline">contact@stopsicklecelldisease.org</a> or call <a href="tel:+19027897763" className="text-red-600 font-semibold hover:underline">(902) 789-7763</a>.
@@ -161,7 +161,7 @@ export default function Partners() {
             Are You a Healthcare Provider?
           </h3>
           <p className="text-slate-700 max-w-2xl mx-auto mb-6 text-sm md:text-base">
-            Partner with SCPAF to streamline patient care pathways, coordinate treatment support, and expand community outreach across the FCT and Nasarawa State.
+            Partner with SCPAF to streamline patient care pathways, coordinate treatment support, and expand community outreach.
           </p>
           <a 
             href="mailto:contact@stopsicklecelldisease.org"
