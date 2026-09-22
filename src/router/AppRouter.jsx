@@ -25,7 +25,7 @@ import BecomeSponsor from "../pages/Sponsors/BecomeSponsor";
 import Donate from "../pages/Sponsors/Donate";
 
 /* Partners */
-import Partners from "../pages/Sponsors/Donate";
+import Partners from "../pages/Sponsors/Partners";
 
 
 /* Utility */
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
       { path: "warriors/register", element: <WarriorRegistration /> },
 
       /* Partners */
-       { path: "pages/partners", element: <Partners /> },
+      { path: "partners", element: <Partners /> }, // ✅ CORRECT
 
       // Sponsors & Supporters
       { path: "sponsors/become-a-sponsor", element: <BecomeSponsor /> },
