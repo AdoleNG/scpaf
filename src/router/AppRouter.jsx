@@ -24,6 +24,10 @@ import WarriorRegistration from "../pages/Warriors/WarriorRegistration";
 import BecomeSponsor from "../pages/Sponsors/BecomeSponsor";
 import Donate from "../pages/Sponsors/Donate";
 
+/* Partners */
+import Partners from "../pages/Sponsors/Donate";
+
+
 /* Utility */
 import Contact from "../pages/Utility/Contact";
 import EventsCalendar from "../pages/Utility/EventsCalendar";
@@ -50,6 +54,9 @@ const router = createBrowserRouter([
       { path: "warriors/volunteer", element: <Volunteer /> },
       { path: "warriors/warriors-caregivers", element: <WarriorsCaregivers /> },
       { path: "warriors/register", element: <WarriorRegistration /> },
+
+      /* Partners */
+       { path: "pages/partners", element: <Partners /> },
 
       // Sponsors & Supporters
       { path: "sponsors/become-a-sponsor", element: <BecomeSponsor /> },
