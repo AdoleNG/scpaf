@@ -22,7 +22,7 @@ export default function BecomeSponsor() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B2A] leading-snug">
-              Sponsorship Mam <br />Opportunities
+              Sponsorship <br />Opportunities
             </h2>
           </div>
           <div>
